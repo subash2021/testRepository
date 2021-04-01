@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="60dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:layout_centerInParent="true"
+        android:id="@+id/userName"
+        android:textColorHint="#359cc4"
+        android:textColor="#972aa8"
+        android:textStyle="italic|bold"
+        android:layout_above="@+id/passWord"
+        android:layout_marginBottom="15dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_centerInParent="true"
+        android:id="@+id/passWord"
+        android:textColorHint="#359cc4"
+        android:textColor="#972aa8"
+        android:textStyle="italic|bold"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:layout_below="@+id/passWord"
+        android:id="@+id/emailId"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textStranger"
+        android:text="Hello Stranger"
+        android:layout_below="@+id/helloButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:layout_centerInParent="true"
+        android:id="@+id/helloButton"
+        android:layout_below="@+id/emailId"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tired of saying Hello"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/userName"
+        android:backgroundTint="@color/yellowish"
+
+
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_image1"
+        android:id="@+id/image1id"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/userName"
+        android:layout_marginBottom="20dp"
+
+
+
+
+        />
+
+
+</RelativeLayout>
